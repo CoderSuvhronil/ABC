@@ -1,0 +1,22 @@
+echo "Enter Cost Price:"
+read c
+echo "Enter Sell Price:"
+read s
+
+if [$ s -gt $cp ];
+then
+   profit = 'expr $s - $c'
+   profitp = $profit \* 100
+   profitf = 'expr $profitp / c'
+   echo "Profit percentage: $profitf%"
+
+elif [$s -lt $c];
+then
+   loss = 'expr $c - $s'
+   lossl = $loss \* 100
+   lossf = 'expr $lossl / c'
+   echo "Loss Percentage: $lossf%"
+else
+   echo "No profit, No Loss"
+fi
+   

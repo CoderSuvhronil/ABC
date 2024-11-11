@@ -1,0 +1,33 @@
+echo "Enter 1st Number:"
+read a
+
+echo "Enter 2nd Number:"
+read b
+
+echo "Enter 3rd Number:"
+read c
+
+if [$a -gt $b]
+then
+    if [$a -gt $c]
+    then
+       echo $a "is GREATEST"
+    else
+       echo $a "is GREATEST"
+    fi
+fi
+
+elif [$b -gt $a]
+then
+   if [$b -gt $c]
+    then
+       echo $b "is GREATEST"
+    else
+       echo $c "is GREATEST"
+    fi
+fi
+
+       
+
+
+

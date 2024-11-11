@@ -1,0 +1,9 @@
+echo "Enter a Number:"
+read a
+
+if [$a -gt 0]
+then
+    echo "Positive"
+else
+    echo "Negative"
+fi
