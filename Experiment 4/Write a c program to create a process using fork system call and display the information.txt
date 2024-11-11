@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<sys/types.h>
+#include<fontl.h>
+#include<stdlib.h>
+
+main()
+{
+  int pid;
+  pid = fork();
+
+  if (pid == 0)
+  {
+    printf("\n CHILD: Pid = %d PPid = %d\n Pid = %d",     	getpid(), getppid(), pid);
+  }
+  else
+  {
+    printf("\nPARENT: Pid = %d PPid = %d \n", getpid(), 	getppid(), pid);
+  }
+}
