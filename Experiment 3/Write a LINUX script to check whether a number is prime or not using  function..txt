@@ -1,0 +1,32 @@
+# Function to check if a number is prime
+is_prime() 
+{
+    local n = $1
+
+    # Edge cases
+    if (( $n -le 1 )); then
+        echo "$n is not a prime number."
+        return
+    fi
+
+    # Check divisors up to the square root of the number
+    i = 2
+    while [$i -le $((n/2))]
+    do
+      if [$((n % i)) -eq 0]
+      then
+         echo "$n is not a Prime Number"
+         return
+      fi
+      i = $((i + 1))
+    done
+
+    echo "$n is a Prime Number"
+}
+
+# Read input from the user
+echo "Enter a number: " 
+read n
+
+# Call the function with the user input
+is_prime "$n"

@@ -1,0 +1,22 @@
+echo "Enter the location to search:"
+read location
+
+echo "Part A: Find all txt files"
+find $location -name "*. txt"
+
+echo -e "\nPart B: Find all files with permissions 777"
+find $location -type f-perm 777
+
+echo -e "\nPart C: Find all files greater than 50MB and less than 100MB"
+find $location-type f -size +50M -size-100M
+
+echo-e "\nPart D: Find all read-only files"
+find $location-type f! -perm /u = W, g=W, O=W
+
+echo -e "In Part E: Find all files that belong to user X under
+/home directory"
+
+echo "Enter the username:"
+read username
+
+find /home -user $username

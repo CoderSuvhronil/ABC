@@ -1,0 +1,14 @@
+echo "Enter a Number:"
+read n
+
+i = 1
+
+echo "Factors of $n are"
+while [$i -le $n]
+do
+  if [$((n % i)) -eq 0]
+  then
+     echo $i
+  fi
+   i = $((i + 1))
+done

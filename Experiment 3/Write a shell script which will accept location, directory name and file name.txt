@@ -1,0 +1,19 @@
+echo "Enter the directory path:"
+read directory
+
+echo "Enter the directory name: "
+read dirname
+
+echo "Enter the file name:"
+read filename
+
+mkdir -p $directory / $dirname"
+
+touch "$ directory / $dirname / $filename"
+
+echo Enter the content of the file:"
+read content
+
+echo "$content" > "$directory / $dirname / $filename"
+
+echo "Content of the file $filename!"
