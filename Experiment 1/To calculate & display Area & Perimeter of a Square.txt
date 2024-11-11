@@ -1,0 +1,8 @@
+echo "Enter Side of a Square:"
+read s
+
+a = 'exp $s \* $s'
+p = 'exp 4 \* $s'
+
+echo "Area of a Square:"$a
+echo "Perimeter of a Square:"$p

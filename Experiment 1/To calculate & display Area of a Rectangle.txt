@@ -1,0 +1,8 @@
+echo "Enter Length:"
+read l
+echo "Enter Breadth:"
+read b
+
+area = 'expr $l \* $b '
+
+echo "The Area of a Rectangle is is"$area
